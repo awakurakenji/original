@@ -1,6 +1,6 @@
 @extends('layouts.front')
 @section('title')
-画面上のナビゲーションバーサンプル · Bootstrap v5.0
+子どもから大人まで健康栄養
 @endsection
 @section('content')
 
@@ -46,7 +46,7 @@
         </div>
         </div>
       <div class="col-md-5">
-         <img src="{{ asset('img/salmon.png') }}" class="bd-placeholder-img card-img-top" width="500" height="500">
+         <img src="{{ asset('img/TOP2/salmon.png') }}" class="bd-placeholder-img card-img-top" width="500" height="500">
         <!--<text x="100%" y="50%" fill="#aaa" dy=".3em">500x500</text>z-->
         </svg>
       </div>
@@ -62,7 +62,7 @@
         </div>
         </div>
         <div class="col-md-5 order-md-1">
-         <img src="{{ asset('img/salad.png') }}" class="bd-placeholder-img card-img-top" width="500" height="500">
+         <img src="{{ asset('img/TOP2/salad.png') }}" class="bd-placeholder-img card-img-top" width="500" height="500">
         </div>
       </div>
 
@@ -76,26 +76,25 @@
         </div>
         </div>
         <div class="col-md-5">
-            <img src="{{ asset('img/bread.png') }}" class="bd-placeholder-img card-img-top" width="500" height="500">
+            <img src="{{ asset('img/TOP2/bread.png') }}" class="bd-placeholder-img card-img-top" width="500" height="500">
         </div>
       </div>
       
       <hr class="featurette-divider">
 
       <!-- /END THE FEATURETTES -->
-
     </div><!-- /.container -->
 
     <div class="album py-5 bg-light">
       <div class="container">
-          <h2 class= "py-4 text-success text-center">レシピ</h2>
+          <h2 class= "py-4 text-success text-center">おすすめレシピ</h2>
            <hr class="featurette-divider">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
 
           <div class="col">
             <div class="card shadow-sm">
               <div class="card-body">
-                <img src="{{ asset('img/soup.png') }}" class="bd-placeholder-img card-img-top" width="100%" height="225">
+                <img src="{{ asset('img/soup/soup.png') }}" class="bd-placeholder-img card-img-top" width="100%" height="225">
                 <p class="card-text">野菜スープ</p>
                 <div class="d-flex justify-content-between align-items-center">
                    <div class="btn-group">
@@ -109,7 +108,7 @@
           <div class="col">
             <div class="card shadow-sm">
               <div class="card-body">
-                 <img src="{{ asset('img/mameyaki.png') }}" class="bd-placeholder-img card-img-top" width="100%" height="225">
+                 <img src="{{ asset('img/oyatu/mameyaki.png') }}" class="bd-placeholder-img card-img-top" width="100%" height="225">
                 <p class="card-text">枝豆の焼き菓子</p>
                 <div class="d-flex justify-content-between align-items-center">
                    <div class="btn-group">
@@ -123,7 +122,7 @@
           <div class="col">
             <div class="card shadow-sm">
               <div class="card-body">
-                 <img src="{{ asset('img/ohitasi.png') }}" class="bd-placeholder-img card-img-top" width="100%" height="225">
+                 <img src="{{ asset('img/fukusai/ohitasi.png') }}" class="bd-placeholder-img card-img-top" width="100%" height="225">
                 <p class="card-text">ほうれん草のおひたし</p>
                 <div class="d-flex justify-content-between align-items-center">
                    <div class="btn-group">
@@ -137,7 +136,7 @@
           <div class="col">
             <div class="card shadow-sm">
               <div class="card-body">
-               <img src="{{ asset('img/cake.png') }}" class="bd-placeholder-img card-img-top" width="100%" height="225">
+               <img src="{{ asset('img/oyatu/cake.png') }}" class="bd-placeholder-img card-img-top" width="100%" height="225">
                 <p class="card-text">パンケーキ</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
@@ -151,7 +150,7 @@
           <div class="col">
             <div class="card shadow-sm">
               <div class="card-body">
-               <img src="{{ asset('img/cookie.png') }}" class="bd-placeholder-img card-img-top" width="100%" height="225">
+               <img src="{{ asset('img/oyatu/cookie.png') }}" class="bd-placeholder-img card-img-top" width="100%" height="225">
                 <p class="card-text">おからクッキー</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
@@ -162,10 +161,10 @@
             </div>
           </div>
           
-            <div class="col">
+          <div class="col">
             <div class="card shadow-sm">
               <div class="card-body">
-               <img src="{{ asset('img/banana.png') }}" class="bd-placeholder-img card-img-top" width="100%" height="225">
+               <img src="{{ asset('img/oyatu/banana.png') }}" class="bd-placeholder-img card-img-top" width="100%" height="225">
                 <p class="card-text">バナナパンケーキ</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
@@ -179,7 +178,7 @@
           <div class="col">
             <div class="card shadow-sm">
               <div class="card-body">
-               <img src="{{ asset('img/syumai.png') }}" class="bd-placeholder-img card-img-top" width="100%" height="225">
+               <img src="{{ asset('img/syusai/syumai.png') }}" class="bd-placeholder-img card-img-top" width="100%" height="225">
                 <p class="card-text">皮なしシュウマイ</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
@@ -194,7 +193,7 @@
           <div class="col">
             <div class="card shadow-sm">
               <div class="card-body">
-                 <img src="{{ asset('img/saba.png') }}" class="bd-placeholder-img card-img-top" alt="..." width="100%" height="225">
+                 <img src="{{ asset('img/syusai/saba.png') }}" class="bd-placeholder-img card-img-top" alt="..." width="100%" height="225">
                 <p class="card-text">さばのごま焼き</p>
                 <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
@@ -209,7 +208,7 @@
           <div class="col">
             <div class="card shadow-sm">
               <div class="card-body">
-                 <img src="{{ asset('img/nasunohitasi.png') }}" class="bd-placeholder-img card-img-top" alt="..." width="100%" height="225">
+                 <img src="{{ asset('img/fukusai/nasunohitasi.png') }}" class="bd-placeholder-img card-img-top" alt="..." width="100%" height="225">
                 <p class="card-text">ナスのおひたし</p>
                 <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
@@ -220,5 +219,99 @@
               </div>
             </div>
           </div>
+    </dvi>
+  </div> <!-- container -->
+        
+   <div class="album py-5 bg-light">
+    <div class="container">
+      <h2 class= "py-4 text-success text-center">レシピを探す</h2>
+      <hr class="featurette-divider">
+     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          
+          <div class="col">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                 <img src="{{ asset('img/syusyoku/okuraudon.png') }}" class="bd-placeholder-img card-img-top" width="100%" height="225">
+                <p class="card-text"></p>
+                <div class="d-flex justify-content-between align-items-center">
+                   <div class="btn-group">
+                   <a class="btn btn-outline-danger" href="" role="button">主食レシピ</a>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <img src="{{ asset('img/syusai/ankakesakana.png') }}" class="bd-placeholder-img card-img-top" width="100%" height="225">
+                <p class="card-text"></p>
+                <div class="d-flex justify-content-between align-items-center">
+                   <div class="btn-group">
+                <a class="btn btn-outline-warning" href="resipi/syusai" role="button">主菜レシピ</a>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                 <img src="{{ asset('img/fukusai/hijiki.png') }}" class="bd-placeholder-img card-img-top" width="100%" height="225">
+                <p class="card-text"></p>
+                <div class="d-flex justify-content-between align-items-center">
+                   <div class="btn-group">
+                   <a class="btn btn-outline-success" href="" role="button">副菜レシピ</a>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <div class="card-body">
+               <img src="{{ asset('img/soup/cone.png') }}" class="bd-placeholder-img card-img-top" width="100%" height="225">
+                <p class="card-text"></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                   <a class="btn btn-outline-info" href="" role="button">汁物レシピ</a>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <div class="card-body">
+               <img src="{{ asset('img/oyatu/banana.png') }}" class="bd-placeholder-img card-img-top" width="100%" height="225">
+                <p class="card-text"></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                   <a class="btn btn-outline-primary" href="" role="button">おやつレシピ</a>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <div class="card-body">
+               <img src="{{ asset('img/TOP/gentei.png') }}" class="bd-placeholder-img card-img-top" width="100%" height="225">
+                <p class="card-text"></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a class="btn btn-outline-secondary" href="" role="button">会員限定レシピ</a>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      </div>      
   </div> <!-- container -->
 @endsection

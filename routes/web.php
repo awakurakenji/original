@@ -35,6 +35,8 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function() {
 
 
     Route::get('layouts/form', 'FormController@add');
+    
+    Route::get('resipi/syusai', 'ResipiController@add');
 
 
 Auth::routes();
