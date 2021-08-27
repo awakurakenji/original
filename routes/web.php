@@ -36,7 +36,22 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function() {
 
     Route::get('layouts/form', 'FormController@add');
     
-    Route::get('resipi/syusai', 'ResipiController@add');
+    // 主菜ページ
+    Route::get('resipi/syusai', 'Resipi\ResipiController@syusai');
+    // 副菜ページ
+    Route::get('resipi/fukusai', 'Resipi\ResipiController@fukusai');
+    // 主食ページ
+    Route::get('resipi/meinn', 'Resipi\ResipiController@meinn');
+    // お汁ページ
+    Route::get('resipi/soup', 'Resipi\ResipiController@soup');
+    // おやつページ
+    Route::get('resipi/desert', 'Resipi\ResipiController@desert');
+    
+    
+    // レシピ豚の生姜焼き
+    Route::get('/butasyouga', 'Menu\MenuController@add');
+    
+  
 
 
 Auth::routes();

@@ -36,15 +36,16 @@
        <h1 class="fw-bold text-success text-center">バランスの良い食事</h1>
        <p class="lead text-success text-center">大人から子供まですべての人に健康的な食生活を</p>
     </div>
+    
     <hr class="featurette-divider">
 
     <div class="row featurette">
       <div class="col-md-7">
          <h2 class="featurette-heading text-center">管理栄養士の考えた食事で健康な毎日</h2>
          <div class="d-flex align-items-center justify-content-center" style="height:300px;">
-        <p class="lead">毎日手軽に作れるメニュー</p>
+        <p class="text-break">毎日手軽に作れるメニュー毎日手軽に作れるメニュー毎日手軽に作れるメニュー毎日手軽に作れるメニュー毎日手軽に作れるメニュー毎日手軽に作れるメニュー毎日手軽に作れるメニュー毎日手軽に作れるメニュー毎日手軽に作れるメニュー毎日手軽に作れるメニュー毎日手軽に作れるメニュー毎日手軽に作れるメニュー毎日手軽に作れるメニュー毎日手軽に作れるメニュー毎日手軽に作れるメニュー</p>
         </div>
-        </div>
+      </div>
       <div class="col-md-5">
          <img src="{{ asset('img/TOP2/salmon.png') }}" class="bd-placeholder-img card-img-top" width="500" height="500">
         <!--<text x="100%" y="50%" fill="#aaa" dy=".3em">500x500</text>z-->
@@ -231,11 +232,11 @@
           <div class="col">
             <div class="card shadow-sm">
               <div class="card-body">
-                 <img src="{{ asset('img/syusyoku/okuraudon.png') }}" class="bd-placeholder-img card-img-top" width="100%" height="225">
+                 <img src="{{ asset('img/meinn/okuraudon.png') }}" class="bd-placeholder-img card-img-top" width="100%" height="225">
                 <p class="card-text"></p>
                 <div class="d-flex justify-content-between align-items-center">
                    <div class="btn-group">
-                   <a class="btn btn-outline-danger" href="" role="button">主食レシピ</a>
+                   <a class="btn btn-outline-danger" href="resipi/meinn" role="button">主食レシピ</a>
                 </div>
                 </div>
               </div>
@@ -263,7 +264,7 @@
                 <p class="card-text"></p>
                 <div class="d-flex justify-content-between align-items-center">
                    <div class="btn-group">
-                   <a class="btn btn-outline-success" href="" role="button">副菜レシピ</a>
+                   <a class="btn btn-outline-success" href="resipi/fukusai" role="button">副菜レシピ</a>
                 </div>
                 </div>
               </div>
@@ -277,7 +278,7 @@
                 <p class="card-text"></p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                   <a class="btn btn-outline-info" href="" role="button">汁物レシピ</a>
+                   <a class="btn btn-outline-info" href="resipi/soup" role="button">汁物レシピ</a>
                 </div>
                 </div>
               </div>
@@ -287,11 +288,11 @@
           <div class="col">
             <div class="card shadow-sm">
               <div class="card-body">
-               <img src="{{ asset('img/oyatu/banana.png') }}" class="bd-placeholder-img card-img-top" width="100%" height="225">
+               <img src="{{ asset('img/desert/banana.png') }}" class="bd-placeholder-img card-img-top" width="100%" height="225">
                 <p class="card-text"></p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                   <a class="btn btn-outline-primary" href="" role="button">おやつレシピ</a>
+                   <a class="btn btn-outline-primary" href="resipi/desert" role="button">おやつレシピ</a>
                 </div>
                 </div>
               </div>
