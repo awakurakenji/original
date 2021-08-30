@@ -1,5 +1,5 @@
 <?php
-
+use Illuminate\Support\Facades\Route;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -33,11 +33,9 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function() {
     Route::get('profile/delete', 'Admin\ProfileController@delete')->middleware('auth');
 });
 
-
-    Route::get('layouts/form', 'FormController@add');
     
-    // 主菜ページ
-    Route::get('resipi/syusai', 'Resipi\ResipiController@syusai');
+// 主菜ページ
+Route::get('resipi/syusai', 'Resipi\ResipiController@syusai');
     // 副菜ページ
     Route::get('resipi/fukusai', 'Resipi\ResipiController@fukusai');
     // 主食ページ
@@ -48,11 +46,9 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function() {
     Route::get('resipi/desert', 'Resipi\ResipiController@desert');
     
     
-    // レシピ豚の生姜焼き
-    Route::get('/butasyouga', 'Menu\MenuController@add');
+// レシピ豚の生姜焼き
+Route::get('/butasyouga', 'Menu\MenuController@add');
     
-  
-
 
 Auth::routes();
 
@@ -61,3 +57,15 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/', 'OriginalController@index');
 
 
+
+// お問い合わせ入力ページ
+Route::get('/', 'ContactsController@index')->name('contact');
+
+// 確認ページ
+Route::post('/confirm', 'ContactsController@confirm')->name('confirm');
+
+// DB挿入、メール送信
+Route::post('/process', 'ContactsController@process')->name('process');
+
+// 完了ページ
+Route::get('/complete', 'ContactsController@complete')->name('complete');

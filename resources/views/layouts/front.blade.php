@@ -52,7 +52,7 @@
                 <a class="nav-link" href="#">会員ページ</a>
               </li>
             　<li class="nav-item active">
-                <a class="nav-link" href="layouts/form">お問い合わせ</a>
+                <a class="nav-link" href="#">お問い合わせ</a>
               </li>
             </ul>
     　　　　　　<form class="d-flex form-inline my-2 my-lg-0">
