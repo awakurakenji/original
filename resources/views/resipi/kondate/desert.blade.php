@@ -4,9 +4,59 @@
 @endsection
 @section('content')
 
-    <div class="text-center">
-     <img src="{{ asset('img/desert/cake.png') }}" class="rounded" height="500" width="70%" alt="...">
+<div class="container py-2">
+    <div class="row min-vh- align-items-center">
+        <div class="col-lg-8 offset-lg-2" id="slider">
+            <div id="myCarousel" class="carousel slide shadow">
+                <!-- main slider carousel items -->
+                <div class="carousel-inner">
+                    <div class="active carousel-item" data-slide-number="0">
+                        <img src="{{ asset('img/syusai/sawarapiza.png') }}"  class="d-block w-100" height="600" alt="...">
+                    </div>
+                    <div class="carousel-item" data-slide-number="1">
+                        <img src="http://via.placeholder.com/1200x480/888/FFF" class="img-fluid">
+                    </div>
+                    <div class="carousel-item" data-slide-number="2">
+                        <img src="http://via.placeholder.com/1200x480&amp;text=three" class="img-fluid">
+                    </div>
+                    <div class="carousel-item" data-slide-number="3">
+                        <img src="http://via.placeholder.com/1200x480&amp;text=four" class="img-fluid">
+                    </div>
+                    <div class="carousel-item" data-slide-number="4">
+                        <img src="http://via.placeholder.com/1200x480&amp;text=five" class="img-fluid">
+                    </div>
+                    <div class="carousel-item" data-slide-number="5">
+                        <img src="http://via.placeholder.com/1200x480&amp;text=six" class="img-fluid">
+                    </div>
+                    <div class="carousel-item" data-slide-number="6">
+                        <img src="http://via.placeholder.com/1200x480&amp;text=seven" class="img-fluid">
+                    </div>
+                    <div class="carousel-item" data-slide-number="7">
+                        <img src="http://via.placeholder.com/1200x480&amp;text=eight" class="img-fluid">
+                    </div>
+                    <div class="carousel-item" data-slide-number="8">
+                        <img src="http://via.placeholder.com/1200x480&amp;text=seven" class="img-fluid">
+                    </div>
+                    <div class="carousel-item" data-slide-number="9">
+                        <img src="http://via.placeholder.com/1200x480&amp;text=eight" class="img-fluid">
+                    </div>
+
+                    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+
+                </div>
+                <!-- main slider carousel nav controls -->
+            </div>
+        </div>
     </div>
+    <!--/main slider carousel-->
+</div>
 
     
      <div class="album py-5 bg-light">
