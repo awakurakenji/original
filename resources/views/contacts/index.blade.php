@@ -44,12 +44,20 @@ $title = 'お問い合わせ';
                 <div class="col-sm-8">
                     <label>{{ Form::radio('gender', "男性") }}男性</label>
                     <label>{{ Form::radio('gender', "女性") }}女性</label>
+                    <label>{{ Form::radio('gender', "回答しない") }}回答しない</label>
                 </div>
             </div>
             @if ($errors->has('gender'))
                 <p class="alert alert-danger">{{ $errors->first('gender') }}</p>
             @endif
-
+            
+            <div class="form-group row">
+                <p class="col-sm-4 col-form-label">件名</p>
+                <div class="col-sm-8">
+                    {{ Form::text('', null, ['class' => 'form-control']) }}
+                </div>
+            </div>
+             
             <div class="form-group row">
                 <p class="col-sm-4 col-form-label">お問い合わせ内容<span class="badge badge-danger ml-1">必須</span></p>
                 <div class="col-sm-8">

@@ -54,8 +54,9 @@ use Illuminate\Support\Facades\Route;
     Route::get('/butasyouga', 'Menu\MenuController@add');
     
   
+  
   // お問い合わせ入力ページ
-  Route::get('contacts/', 'ContactsController@index')->name('contact');
+  Route::get('/contacts', 'ContactsController@index')->name('contact');
     // 確認ページ
     Route::post('/confirm', 'ContactsController@confirm')->name('confirm');
     // DB挿入、メール送信
