@@ -27,7 +27,11 @@
         <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">
         {{-- この章の後半で作成するCSSを読み込みます --}}
         <link href="{{ asset('css/front.css') }}" rel="stylesheet">
-        <link href="{{ asset('css/test.css') }}" rel="stylesheet">  
+        <link href="{{ asset('css/test.css') }}" rel="stylesheet">
+        
+        {{--bootstrap.social--}}
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
         
         <!-- Bootstrap core CSS　ナビゲーションバーlite -->
     　　<link href=https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
@@ -42,7 +46,7 @@
         
         <!-- ナビゲーションバー -->    
       <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-      <a class="navbar-brand text-success" href="/">栄養ラボ</a>
+      <a class="navbar-brand text-success fw-bold" href="/">栄養LABO</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -51,34 +55,27 @@
           <ul class="navbar-nav">
           
             <li class="nav-item">
-              <a class="nav-link" href="#"></a>
+              <a class="nav-link" href="/"><i class="bi bi-person-plus"></i>無料登録</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">会員ページ</a>
+              <a class="nav-link" href="/"><i class="bi bi-bag-check"></i>会員ページ</a>
             </li>
             <!-- ドロップダウンタイプ -->
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              　レシピを探す
+                <i class="bi bi-search">レシピを探す</i>
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
+                <a class="dropdown-item" href="#">主食</a>
+                <a class="dropdown-item" href="#">主菜</a>
+                <a class="dropdown-item" href="#">副菜</a>
+                <a class="dropdown-item" href="#">汁物</a>
+                <a class="dropdown-item" href="#">おやつ</a>
               </div>
             </li>
-            
-             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              　その他
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">会社概要</a>
-                <a class="dropdown-item" href="#">Another action</a>
-              </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/contacts/">お問い合わせ</a>
+                <a class="nav-link" href="/contacts/"><i class="bi bi-envelope"></i>お問い合わせ</a>
             </li>
           </ul>
         </div>
@@ -89,14 +86,44 @@
           @yield('content')
       </main>
   </div>
-    <footer class="text-muted py-5">
-        <div class="container">
-            <p class="float-end mb-">
-                <a href="#">トップに戻る</a>
-            </p>
-            <p class="mb-1">アルバムサンプルは &copy; Bootstrap ですが、ダウンロードしてカスタマイズしてみましょう。</p>
-            <p class="mb-0">Bootstrap は初めてですか？ <a href="/">ホームページにアクセスする</a>か<a href="/docs/5.0/getting-started/introduction/">スタートガイド</a>を読みましょう。</p>
-        </div>
-    </footer>
+  
+  
+  
+        {{--ロゴリンク先--}}
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+      
+      <footer id="footer">
+        <section class="primary">
+          <p class="logo"><a href="#">栄養LABO</a></p>
+          <p class="address">
+            〒100-0005 東京都千代田区丸の内１丁目<br>
+          </p>
+          
+          <div class="navi-row">
+            <ul class="navi">
+              <li><a href="#">ホーム</a></li>
+              <li><a href="#">料金プラン</a></li>
+              <li><a href="#">相談してよかったこと</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">会社概要</a></li>
+            </ul>
+            <ul class="sns-navi">
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+              <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            </ul>
+          </div>
+          
+          </section>
+          <section class="secondary">
+            <ul class="sitenavi">
+              <li><a href="#">サイトマップ</a></li>
+              <li><a href="#">プライバシーポリシー</a></li>
+            </ul>
+            <p class="copyright">Copyright WEBSITE,Inc. All rights reserved.</p>
+        </section>
+        
+      </footer>
 </html>
 

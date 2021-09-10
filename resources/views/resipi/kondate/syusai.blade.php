@@ -91,10 +91,10 @@
             <div class="card shadow-sm">
               <div class="card-body">
                  <img src="{{ asset('img/syusai/sawarapiza.png') }}" class="bd-placeholder-img card-img-top" width="100%" height="225">
-                <p class="card-text">さわらのピザ風チーズ</p>
+                <p class="card-text">さわらのピザ風焼き</p>
                 <div class="d-flex justify-content-between align-items-center">
                    <div class="btn-group">
-                    <a class="btn btn-outline-warning" href="" role="button">作り方</a>
+                    <a class="btn btn-outline-warning" href="/sawarapiza" role="button">作り方</a>
                 </div>
                 </div>
               </div>
@@ -119,7 +119,7 @@
             <div class="card shadow-sm">
               <div class="card-body">
                <img src="{{ asset('img/syusai/ankakesakana.png') }}" class="bd-placeholder-img card-img-top" width="100%" height="225">
-                <p class="card-text">魚のあんかけソース</p>
+                <p class="card-text">たらのあんかけソース</p>
                 <div class="d-flex justify-content-between align-items-center">
                    <div class="btn-group">
                       <a class="btn btn-outline-warning" href="" role="button">作り方</a>

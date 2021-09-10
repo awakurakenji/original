@@ -4,12 +4,9 @@
 @endsection
 @section('content')
 
- 
-
   <body>
     <!-- Page Content -->
     <div class="container">
-
       <!-- Portfolio Item Heading -->
       <h1 class="my-5 mb-2">豚の生姜焼き
         <small></small>
@@ -17,58 +14,43 @@
      
       <!-- Portfolio Item Row -->
       <div class="row">
-
         <div class="col-md-8">
           <img class="img-fluid" src="{{ asset('img/syusai/butasyouga.png') }}" alt="画像">
         </div>
 
         <div class="col-md-4">
-          <h3 class="my-3">Project Description</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
-          <h3 class="my-3">Project Details</h3>
+          <h3 class="my-3">効果</h3>
+          <p>疲労回復効果、冷え性対策に</p>
+          <h3 class="my-3">材料（２人分）</h3>
           <ul>
-            <li>Lorem Ipsum</li>
-            <li>Dolor Sit Amet</li>
-            <li>Consectetur</li>
-            <li>Adipiscing Elit</li>
+            <li>豚肉・・・２００g</li>
+            <li>玉ねぎ・・・１/２個（約１００g）</li>
+            <li>（生姜焼きのタレ）</li>
+            <P>しょうがすりおろし・・・２０グラム<br>
+            しょうゆ、酒、みりん・・・各大さじ１</P>
+            <li>お好みでキャベツ適量</li>
           </ul>
         </div>
-
       </div>
       <!-- /.row -->
 
       <!-- Related Projects Row -->
-      <h3 class="my-4">Related Projects</h3>
+      <h3 class="my-4">作り方</h3>
 
       <div class="row">
-
-        <div class="col-md-3 col-sm-6 mb-4">
-          <a href="#">
-            <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-          </a>
+        <div class="col-md-4">
+          <h4 class="my-3">1.肉と玉ねぎを焼く</h4>
+          <p>水分がなくらないように弱火でじっくり焼く。<dr>
+            （※タレも最初から加えておく）
+          </p>
+          <h4 class="my-3">2.タレを加える</h4>
+          <p>お肉が硬くならないように中火で炒める。</p>
+           <h4 class="my-3">3.タレをからめる</h4>
+           <p>タレがからむまで弱火で煮詰める。</p>
         </div>
-
-        <div class="col-md-3 col-sm-6 mb-4">
-          <a href="#">
-            <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-          </a>
-        </div>
-
-        <div class="col-md-3 col-sm-6 mb-4">
-          <a href="#">
-            <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-          </a>
-        </div>
-
-        <div class="col-md-3 col-sm-6 mb-4">
-          <a href="#">
-            <img class="img-fluid" src="http://placehold.it/500x300" alt="">
-          </a>
-        </div>
-
       </div>
       <!-- /.row -->
-
+      
     </div>
     <!-- /.container -->
 

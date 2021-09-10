@@ -51,7 +51,10 @@ use Illuminate\Support\Facades\Route;
     
     
     // レシピ豚の生姜焼き
-    Route::get('/butasyouga', 'Menu\MenuController@add');
+    Route::get('/butasyouga', 'Menu\MenuController@buta');
+    
+    Route::get('/sawarapiza', 'Menu\MenuController@sawara');
+  
     
   
   
