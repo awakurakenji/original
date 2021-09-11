@@ -123,8 +123,9 @@ body {
 @media screen and (max-width: 767px) {
   #footer .primary {
     padding: 20px 20px;
-    background: #333;
+    background: linear-gradient(#f5deb3,#deb887);
   }
+  
   #footer .secondary {
     display: block;
     padding: 20px 20px;
@@ -304,7 +305,7 @@ h2:before {
 }
 
 
-/*手続き順番表示*/
+/*手続き番号表示*/
 h3 {
   position: relative;
   padding-left: 4em;
