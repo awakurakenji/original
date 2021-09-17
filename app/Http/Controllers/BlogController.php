@@ -25,7 +25,10 @@ class BlogController extends Controller
           $posts = Originals::where('title', $cond_title)->get();
       } else {
           // それ以外はすべてのニュースを取得する
-          $posts = Originals::all();
+        //   $posts = Originals::all();
+        // $posts = Originals::paginate(2);
+        // $posts = Originals::orderBy('updated_at', 'DESC')->paginate(2);
+        $posts = Originals::where('display', '1')->orderBy('id', 'DESC')->paginate(2);
       }
       return view('blog.blog', ['posts' => $posts, 'cond_title' => $cond_title]);
   }

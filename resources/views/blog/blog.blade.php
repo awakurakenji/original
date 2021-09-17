@@ -14,6 +14,7 @@
         <div class="row">
             <div class="posts col-md-8 mx-auto mt-3">
                 @foreach($posts as $post)
+                  @if ($post->display  == "1")
                     <div class="post">
                         <div class="row">
                             <div class="text col-md-6">
@@ -35,7 +36,9 @@
                         </div>
                     </div>
                     <hr color="#c0c0c0">
+                     @endif
                 @endforeach
+                {{ $posts->links() }}
             </div>
         </div>
     </div>

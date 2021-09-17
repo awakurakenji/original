@@ -11,7 +11,8 @@ class OriginalController extends Controller
 {
     public function index(Request $request)
     {
-        $posts = Originals::all()->sortByDesc('updated_at');
+        // $posts = Originals::all()->sortByDesc('updated_at');
+        $posts = Originals::orderBy('updated_at', 'DESC')->take(2)->get();
 
         if (count($posts) > 0) {
             $headline = $posts->shift();

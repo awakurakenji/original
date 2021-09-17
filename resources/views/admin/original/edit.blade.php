@@ -40,7 +40,7 @@
                             </div>
                             <div class="form-check">
                                 <label class="form-check-label">
-                                    <input type="checkbox" class="form-check-input" name="display" value="true">表示する
+                                    <input type="checkbox" class="form-check-input" name="display" value="1" @if($original_form->display) checked @endif>表示する
                                 </label>
                             </div>
                         </div>
