@@ -7,7 +7,7 @@
 <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      　<img src="{{ asset('img/TOP/yasai.png') }}" class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" height="600" alt="...">
+      <img src="{{ asset('img/TOP/yasai.png') }}" class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" height="600" alt="...">
     </div>
     <div class="carousel-item">
       <img src="{{ asset('img/TOP/soup.png') }}" class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" height="600" alt="...">
@@ -90,7 +90,7 @@
         <div class="col-md-7 order-md-2">
           <h2 class="featurette-heading text-center mt-3">管理栄養士の考えたメニュー</h2>
             <div class="d-flex align-items-center justify-content-center" style="height:200px;">
-              <p class="text-break">実際に病院や保育園でも作っているメニューなどを載せてます。
+              <p class="text-break">保育園で作っているメニューを載せてます。
               シンプルで作りやすい料理なので、お子様から大人まで手軽に健康な食事が摂れるようにしています。
               </p>
             </div>
@@ -104,7 +104,7 @@
 
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading text-center mt-3">個別相談</h2>
+          <h2 class="featurette-heading text-center mt-3">カウンセリグ</h2>
             <div class="d-flex align-items-center justify-content-center" style="height:200px;">
               <ul>
                 <h5 class="text-break mb-3">-お客様のお悩みに合わせたご提案をします-</h5>
@@ -117,7 +117,7 @@
           </div>
         </div>
         <div class="col-md-5">
-          <img class="image" src="{{ asset('img/TOP2/bread.png') }}" class="bd-placeholder-img card-img-top" width="500" height="500">
+          <img class="image" src="{{ asset('img/TOP/counseling.png') }}" class="bd-placeholder-img card-img-top" width="500" height="500">
         </div>
       </div>
       
@@ -290,7 +290,7 @@
         
    <div class="album py-5 bg-light">
     <div class="container">
-        <h2 class="pb-4 mb-4 font-italic border-bottom text-success text-center">Recipe</h2>
+        <h2 class="pb-4 mb-4 font-italic border-bottom text-success text-center">レシピ</h2>
       <!--<h2 class= "py-4 text-success text-center">レシピを探す</h2>-->
       <hr class="featurette-divider">
      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
@@ -391,53 +391,77 @@
               </div>
             </div>
           </div>
-
+          
       </div>      
   </div> <!-- container -->
   
- <div class="mt-5">
+  <div class="mt-5">
+    <div class="container">
+      <h2 class="pb-4 mb-4 font-italic border-bottom text-primary text-center">ブログ</h2>
+      <!--<hr class="featurette-divider">-->
+    </div>
+  </div>
+
   <div class="container">
-      <h2 class="pb-4 mb-4 font-italic border-bottom text-primary text-center">Blog</h2>
-      <hr class="featurette-divider">
-  </div>
-</div>
-
-  <main class="container">
-
-  <div class="row mb-2">
-    
-    <div class="col-md-6">
-      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-        <div class="col p-4 d-flex flex-column position-static">
-          <strong class="d-inline-block mb-2 text-primary">健康</strong>
-          <h4 class="mb-0">平均寿命と健康寿命の違いにつて</h4>
-          <div class="mb-1 text-muted">11/12</div>
-          <p class="card-text mb-auto">平均寿命と健康寿命との差は、日常生活に制限のある「不健康な期間」を意味します。</p>
-          <a href="#" class="stretched-link">続きを読む</a>
-        </div>
+        <hr color="#c0c0c0">
+        @if (!is_null($headline))
+            <div class="row">
+                <div class="headline col-md-10 mx-auto">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="caption mx-auto">
+                                <div class="image">
+                                    @if ($headline->image_path)
+                                        <img src="{{ asset('storage/image/' . $headline->image_path) }}">
+                                    @endif
+                                </div>
+                                <div class="title p-2">
+                                    <h1>{{ str_limit($headline->title, 70) }}</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="body mx-auto">{{ str_limit($headline->body, 650) }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        @endif
+        <hr color="#c0c0c0">
         
-        <div class="col-auto d-none d-lg-block">
-          <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+        <div class="row">
+            <div class="posts col-md-8 mx-auto mt-3">
+                @foreach($posts as $post)
+                    <div class="post">
+                        <div class="row">
+                            <div class="text col-md-6">
+                                <div class="date">
+                                    {{ $post->updated_at->format('Y年m月d日') }}
+                                </div>
+                                <div class="title">
+                                    {{ str_limit($post->title, 150) }}
+                                </div>
+                                <div class="body mt-3">
+                                    {{ str_limit($post->body, 1500) }}
+                                </div>
+                            </div>
+                            <div class="image col-md-6 text-right mt-4">
+                                @if ($post->image_path)
+                                    <img src="{{ asset('storage/image/' . $post->image_path) }}">
+                                @endif
+                            </div>
+                        </div>
+                    </div>
+                    <hr color="#c0c0c0">
+                @endforeach
+            </div>
         </div>
-      </div>
     </div>
-    <div class="col-md-6">
-      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-        <div class="col p-4 d-flex flex-column position-static">
-          <strong class="d-inline-block mb-2 text-success">野菜</strong>
-          <h4 class="mb-0">野菜の栄養を上手に摂る方法</h4>
-          <div class="mb-1 text-muted">11/11</div>
-          <p class="mb-auto">水洗いをすると栄養が抜け、大切な栄養素が水に溶けてしまう。</p>
-          <a href="#" class="stretched-link">続きを読む</a>
-        </div>
-        <div class="col-auto d-none d-lg-block">
-          <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
-        </div>
-      </div>
     </div>
-  </div>
-  
-  </main><!-- /.container -->
+    
+    <div class="text-center">
+      <a class="btn btn-outline-secondary text-center" href="blog/blog" role="button">すべての記事をみる</a>
+    </div>
+    
 
 @endsection

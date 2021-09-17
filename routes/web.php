@@ -52,10 +52,13 @@ use Illuminate\Support\Facades\Route;
     
     // レシピ豚の生姜焼き
     Route::get('/butasyouga', 'Menu\MenuController@buta');
-    
+    // レシピさわらピザ
     Route::get('/sawarapiza', 'Menu\MenuController@sawara');
   
-    
+  
+  //ブログページ
+  Route::get('blog/blog', 'BlogController@kiji');
+  
   
   
   // お問い合わせ入力ページ

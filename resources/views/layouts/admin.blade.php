@@ -43,12 +43,15 @@
                         </ul>
                         
                         <li class="nav-itme">
-                            <a cllass="nav-link"href="amazonaws.com">Home</a>
+                            <a cllass="nav-link"href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a cllass="nav-link"href="create">新規登録</a>
+                        </li>
+                          <li class="nav-item">
+                            <a cllass="nav-link"href="/admin/original">編集一覧</a>
                         </li>
                         
-                        <li class="nav-item">
-                            <a cllass="nav-link"href="#">About</a>
-                        </li>
                         <!-- Right Side Of Navbar -->
                         <ul class="navbar-nav ml-auto">
                                                    {{-- 以下を追記 --}}

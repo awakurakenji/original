@@ -43,6 +43,7 @@ class OriginalController extends Controller
     // admin/news/createにリダイレクトする
     return redirect('admin/original/create');
   }
+  
   public function index(Request $request)
   {
       $cond_title = $request->cond_title;
